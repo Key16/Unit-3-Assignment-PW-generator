@@ -2,6 +2,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: monospace;
+}
+
+::selection {
+    background-color: turquoise;
+    color: black;
 }
 
 html,
@@ -15,6 +21,7 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/96/47/yBZiDV.jpg);
 }
 
 .wrapper {
@@ -27,15 +34,15 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(207, 100%, 98%);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsla(209, 68%, 35%, 0.548);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  box-shadow: rgba(0, 0, 0, 0.623) 0px 2px 8px 0px;
+  color: hsl(207, 100%, 98%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -74,7 +81,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgba(39, 227, 240, 0.801);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -86,6 +93,10 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+textarea{
+    background-color: black;
 }
 
 button[disabled] {
@@ -108,7 +119,7 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -116,6 +127,11 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  color:white;
+  }
+  
+textarea:active{
+    user-select: all;
 }
 
 @media (max-width: 690px) {
