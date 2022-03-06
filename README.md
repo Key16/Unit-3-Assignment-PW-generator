@@ -1,5 +1,7 @@
 # Welcome to the Password Generator
 
+![Here is the snapshot of the webpage.](./assets/Images/PW-generator.png)
+
 
 To view the code on my github go to this [ link ](https://github.com/Key16/Unit-3-Assignment-PW-generator )
 
