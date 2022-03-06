@@ -21,16 +21,9 @@ function generatePassword() {
         upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         lowerCase: "abcdefghijklmnopqrstuvwxyz",
         numberCase: "0123456789",
-        specialCharacters: "!@#$%^&*()"
+        specialCharacters: "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
     }
-
-    // var choiceChecker = {
-    //     upperCase: 0,
-    //     lowerCase: 0,
-    //     numberCase: 0,
-    //     specialCharacters: 0
-    // }
-
+    //setting the selectedOption variable to be an array for pushing chosen options
     var selectedOptions = []
 
     var numberOfChara = window.prompt("What is the desired length, oh mighty one?")
@@ -45,7 +38,7 @@ function generatePassword() {
     }
 
 
-    // function that pushes the options out
+    // function that pushes the options out into an array selectedOption as defined above
 
     if (window.confirm("Would you like upperCase")) {
         selectedOptions.push(choices.upperCase);
@@ -60,9 +53,13 @@ function generatePassword() {
         selectedOptions.push(choices.specialCharacters)
     }
 
+    // the selectedOptions currently looks like an array, so will neeed to join/concatenate into one string
+
     var finalOptions = selectedOptions.join('');
 
     var finalOptionsLength = finalOptions.length
+
+    // checking if there was any options actually selected. 
 
     if (finalOptionsLength < 1) {
         alert("You didn't specify any requirements")
