@@ -1,6 +1,14 @@
+# Welcome to the Password Generator
+
+
+To view the code on my github go to this [ link ](https://github.com/Key16/Unit-3-Assignment-PW-generator )
+
+Or view it live [ here ](https://key16.github.io/Unit-3-Assignment-PW-generator/ )
+
+
 ## Brainstorming
 
-Order of the possible scenarios
+Building of the possible scenarios
 
 Generating password length
 - Less or more than 8-128 characters
@@ -42,9 +50,3 @@ The final line in the function would return the createPassword function that wou
 
 I wanted to make the page look more sleek as a 'secure password generator' so just added some CSS and background to jazz it up. 
 
-#
-To view the code on my github go to this link 
-https://github.com/Key16/Unit-3-Assignment-PW-generator
-
-Or view it live here
-https://key16.github.io/Unit-3-Assignment-PW-generator/
