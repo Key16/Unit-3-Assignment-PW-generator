@@ -17,6 +17,7 @@ function writePassword() {
 function generatePassword() {
     var password = ""
 
+    //all the available choices
     var choices = {
         upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         lowerCase: "abcdefghijklmnopqrstuvwxyz",
@@ -26,7 +27,8 @@ function generatePassword() {
     //setting the selectedOption variable to be an array for pushing chosen options
     var selectedOptions = []
 
-    var numberOfChara = window.prompt("What is the desired length, oh mighty one?")
+    //start of prompts
+    var numberOfChara = window.prompt("What is the desired length, oh mighty one? \nYour mighty domain is between 8 and 128", 8)
 
 
     if (numberOfChara >= 8 && numberOfChara <= 128) {
@@ -65,6 +67,8 @@ function generatePassword() {
         alert("You didn't specify any requirements")
         return "Try again with requirements"
     }
+
+    // generate password from selected characters 
 
     function createPassword(numberOfChara) {
         for (var i = 0; i < numberOfChara; i++) {
